@@ -1,0 +1,14 @@
+**Append** (push) = extraLargeArray = 12.679046 ms
+**Append** = largeArray = 643.019 us 
+**Append** = mediumArray = 170.606 us
+**Append** = smallArray = 120.716 us
+**Append** = 114.563 us
+****
+**Insert** (unshift) = extraLargeArray = 1.010365456 s
+**Insert** = largeArray = 6.875025 ms
+**Insert** = mediumArray = 190.766 us
+**Insert** = smallArray = 107.573
+**Insert** = 61.243 us
+
+
+The runtime results of the two functions show that the Append/push function scales better in regards to scale.  With the smaller arrays the Insert/unshift does have a quicker run time but as soon has the array get larger it start to slow down.  This is because with unshift it is creating a new array each time it runs and putting our new number in the front of the array. 
